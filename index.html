@@ -1,55 +1,246 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
-  <title>MartX | Digital Growth Partner</title>
-  <meta name="description" content="We empower brands through strategic marketing, creative content, and high-performance advertising.">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Main.CSS -->
-  <link rel="stylesheet" href="CSS/main.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MartX </title>
+    <link rel="icon" href="Images/icon.png" type="image/x-icon">
+    <meta name="description" content="MartX specializes in Instagram-first content creation, carousel strategy, and branding services for modern businesses.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js">
+      <link rel="stylesheet" href="CSS/style.css" />
 
-<body style="opacity: 0;">
+    </head>
+    <body>
+        <div class="language-toggle" id="languageToggle">
+            EN | عربي
+        </div>
 
-  <div class="Wrapper TriggerClass">
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <img src="Images/logo.png" alt="Girl in a jacket" width="160" height="60">
+                    <ul class="nav-links">
+                        <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#work" data-en="Work" data-ar="الخطط">Plans</a></li>
+                        <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                    <a href="#contact" class="cta-button" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+                </div>
+            </div>
+        </nav>
 
-    <div class="CanvasWrap">
-      <Canvas class="CanvasElementClass"></Canvas>
-    </div>
+        <section class="hero">
+            <div class="hero-content fade-in">
+                <div class="hero-badge" data-en="Creative Digital Marketing Agency" data-ar="وكالة تسويق رقمي وإبداعي">Creative Digital Marketing Agency</div>
+                <h1>
+                    <span data-en="We Build Brands That" data-ar="بنبني براندات">We Build Brands That</span>
+                    <span class="hero-gradient-text" data-en="Stand Out" data-ar="بتظهر وتثبت">Stand Out</span>
+                </h1>
+                <p data-en="From social media content to ad campaigns and brand identity —  
+                MartX helps businesses grow, engage, and shine in the digital world." data-ar="من إدارة المحتوى للتصميمات والإعلانات، MartX بتساعد مشروعك يظهر قدام عملاءه بشكل احترافي وجذاب.">
+                From social media content to ad campaigns and brand identity —  
+                MartX helps businesses grow, engage, and shine in the digital world.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">
+                        <span data-en="Start Your Glow-Up" data-ar="ابدأ تطورك">Start Your Glow-Up</span>
+                        <span>→</span>
+                    </a>
 
-    <h1 class="Title">MartX</h1>
-    <!------------/Title------------->
+                </div>
+            </div>
+        </section>
 
-    <!------------CodeBy------------->
-    <a class="CodeBy" target="_blank" href="https://icodeayush.github.io/">Code By <span>Martin</span></a>
-    <!------------/CodeBy------------->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge" data-en="Our Services" data-ar="خدماتنا">Our Services</div>
+                    <h2 class="section-title">              
+                        <span data-en="Smart Marketing. " data-ar="تسويق ذكي.">Smart Marketing.</span>
+                        <span class="gradient-text" data-en=" Real Results." data-ar="نتايج حقيقية.">Real Results.</span>
+                    </h2>
+                    <p class="section-description" data-en="From strategy to execution our services help your brand grow, connect, and convert" data-ar="من التخطيط للتنفيذ، خدماتنا بتخلي براندك يوصل لجمهوره، يبان، ويحقق نتايج.">
+                        From strategy to execution our services help your brand grow, connect, and convert
+                    </p>
+                </div>
+    
+                <div class="services-grid">
+                    <div class="service-card scale-in">
+                        <div class="service-icon">
+                            <svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2v11z"></path>
+                                <circle cx="12" cy="13" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 data-en="Content Creation" data-ar="إنشاء المحتوى">Content Creation</h3>
+                        <p data-en="We create engaging visuals and words that reflect your brand and capture attention across platforms." data-ar="بنصمملك محتوى بصري وكلام يعكس شخصية البراند ويشد الانتباه على أي منصة.">We create engaging visuals and words that reflect your brand and capture attention across platforms.</p>
+                        <div class="service-features">
+                            <span class="feature-tag" data-en="Photo & Video" data-ar="صور وفيديو">Photo & Video</span>
+                            <span class="feature-tag" data-en="Copywriting" data-ar="كتابة الإعلانات">Copywriting</span>
+                            <span class="feature-tag" data-en="Brand Storytelling" data-ar="حكاية العلامة التجارية">Brand Storytelling</span>
+                        </div>
+                    </div>
+                    <div class="service-card scale-in">
+                        <div class="service-icon">
+                            <svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 data-en="Social Media Management" data-ar="إدارة السوشيال ميديا">Social Media Management</h3>
+                        <p data-en="We handle posting, engagement, planning, and reporting so your brand always feels alive and active." data-ar="بننشر، نتابع، نخطط، ونحلل علشان صفحتك دايمًا تكون شغالة وتحسس الناس إنك موجود.">We handle posting, engagement, planning, and reporting so your brand always feels alive and active.</p>
+                        <div class="service-features">
+                            <span class="feature-tag" data-en="Scheduling" data-ar="جدولة المنشورات">Scheduling</span>
+                            <span class="feature-tag" data-en="Engagement" data-ar="تفاعل وبناء مجتمع">Engagement</span>
+                            <span class="feature-tag" data-en="Inbox Replies" data-ar="الرد على المتابعين">Inbox Replies</span>
+                            <span class="feature-tag" data-en="Analytics" data-ar="تقارير الأداء">Analytics</span>
+                        </div>
+                    </div>
+                    <div class="service-card scale-in">
+                        <div class="service-icon">
+                            <svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3 data-en="Paid Ads" data-ar="الإعلانات الممولة">Paid Ads</h3>
+                        <p data-en="Smart campaigns that target your ideal customer, bring real traffic, and maximize ROI." data-ar="حملات ذكية توصل لعميلك الصح، وتحقق نتائج ملموسة بأقل تكلفة.">Smart campaigns that target your ideal customer, bring real traffic, and maximize ROI.</p>
+                        <div class="service-features">
+                            <span class="feature-tag" data-en="Instagram Ads" data-ar="إعلانات الإنستغرام">Instagram Ads</span>
+                            <span class="feature-tag" data-en="Meta Campaigns" data-ar="حملات ميتا">Meta Campaigns</span>
+                            <span class="feature-tag" data-en="Audience Targeting" data-ar="استهداف الجمهور">Audience Targeting</span>
+                        </div>
+                    </div>
+    
+                    <div class="service-card scale-in">
+                        <div class="service-icon">
+                            <svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-en="Branding" data-ar="العلامة التجارية">Branding</h3>
+                        <p data-en="Full branding solutions from logo design to a complete identity system your audience won’t forget." data-ar="من أول اللوجو لحد دليل الهوية، بنبني شكل متكامل يخلي البراند بتاعك يثبت في دماغ الناس.">Full branding solutions from logo design to a complete identity system your audience won’t forget.</p>
+                        <div class="service-features">
+                            <span class="feature-tag" data-en="Logo Design" data-ar="تصميم الشعار">Logo Design</span>
+                            <span class="feature-tag" data-en="Brand Guidelines" data-ar="دليل العلامة التجارية">Brand Guidelines</span>
+                            <span class="feature-tag" data-en="Visual Identity" data-ar="الهوية البصرية">Visual Identity</span>
+                        </div>
+                    </div>
+    
+                    <div class="service-card scale-in">
+                        <div class="service-icon">
+                            <svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 data-en="Consultation & Strategy" data-ar="استشارات وتسويق استراتيجي">Consultation & Strategy</h3>
+                        <p data-en="We help you make the right moves with data-driven, customized marketing strategies." data-ar="بنفكّر معاك، ونبني خطط تسويقية مبنية على بيانات تناسب هدفك وميزانيتك.">We help you make the right moves with data-driven, customized marketing strategies.</p>
+                        <div class="service-features">
+                            <span class="feature-tag" data-en="Marketing Strategy" data-ar="استراتيجية تسويقية">Marketing Strategy</span>
+                            <span class="feature-tag" data-en="Growth Planning" data-ar="خطة نمو">Growth Planning</span>
+                            <span class="feature-tag" data-en="Target Audience" data-ar="تحديد الجمهور">Target Audience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!------------ScrollDown------------->
-    <div class="ScrollDown">
-      <h1><span>Scroll Down</span></h1>
-    </div>
-    <!------------/ScrollDown------------->
+        <section id="work" class="carousel-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge" data-en="Our Plans" data-ar="خططنا">Our Signature Style</div>
+                    <h2 class="section-title">
+                        <span data-en="Choose the Right Plan for" data-ar="اختار الباقة اللي تناسب">Choose the Right Plan for</span>
+                        <span class="gradient-text" data-en="Your Brand" data-ar="شغلك">Your Brand</span>
+                    </h2>
+                    <p class="section-description" data-en="From startup to pro pick what fits your goals." data-ar="من أول خطوة لحد الاحتراف الباقة المناسبة بتفرق.">
+                        From startup to pro pick what fits your goals.
+                    </p>
+                </div>
+    
+                <div class="carousel-grid">
+                    <div class="carousel-card scale-in">
+                        <div class="carousel-slide-number" data-en="Plan 1" data-ar="خطه 1">Plan 1</div>
+                        <h3 data-en="Starter Pack" data-ar="باقة البداية">Starter Pack</h3>
+                        <p data-en="12 Posts / Month" data-ar="١٢ بوست شهريًا">12 Posts / Month</p>
+                        <p data-en="Basic Designs" data-ar="تصميمات أساسية">Basic Designs</p>
+                        <p data-en="Content Calendar" data-ar="خطة محتوى">Content Calendar</p>
+                        <p data-en="Page Setup" data-ar="ضبط الصفحة">Page Setup</p>
+                        <div class="carousel-arrow">→</div>
+                        <div class="carousel-decoration"></div>
+                    </div>
+    
+                    <div class="carousel-card scale-in">
+                        <div class="carousel-slide-number" data-en="Plan 2" data-ar="حطه 2">Plan 2</div>
+                        <h3 data-en="Growth Pack" data-ar="باقة النمو">Growth Pack</h3>
+                        <p data-en="16 Posts / Month" data-ar="١٦ بوست شهريًا">16 Posts / Month</p>
+                        <p data-en="Creative Designs" data-ar="تصميمات احترافية">Creative Designs</p>
+                        <p data-en="1 Ad Campaign" data-ar="حملة إعلانية">1 Ad Campaign</p>
+                        <p data-en="Community Replies" data-ar="متابعة تعليقات ورسائل">Community Replies</p>
+                        <p data-en="Monthly Report" data-ar="تقرير شهري">Monthly Report</p>
+                        <div class="carousel-arrow">→</div>
+                        <div class="carousel-decoration"></div>
+                    </div>
+    
+                    <div class="carousel-card scale-in">
+                        <div class="carousel-slide-number" data-en="Plan 3" data-ar="خطه 3">Plan 3</div>
+                        <h3 data-en="Pro Pack" data-ar="باقة المحترفين">Pro Pack</h3>
+                        <p data-en="20+ Posts / Month" data-ar="أكثر من ٢٠ بوست">20+ Posts / Month</p>
+                        <p data-en="Premium Design" data-ar="تصميم احترافي">Premium Design</p>
+                        <p data-en="2 Ad Campaigns" data-ar="حملتين إعلانيتين">2 Ad Campaigns</p>
+                        <p data-en="Brand Support" data-ar="دعم هوية البراند">Brand Support</p>
+                        <p data-en="Report + Optimization" data-ar="تحليل وتحسين">Report + Optimization</p>
+                        <div class="carousel-arrow">→</div>
+                        <div class="carousel-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge" data-en="Let's Talk" data-ar="لنتحدث">Let's Talk</div>
+                    <h2 class="section-title">
+                        <span data-en="Ready to Go" data-ar="مستعد">Ready to Go</span>
+                        <span class="gradient-text" data-en="Viral?" data-ar="للانتشار؟">Viral?</span>
+                    </h2>
+                    <p class="section-description" data-en="Let’s build a brand your audience can’t ignore." data-ar="ابعتلنا، وخلّي البراند بتاعك يبقى متشاف ومؤثر">
+                        Let’s build a brand your audience can’t ignore.
+                    </p>
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/201020034584"> <img alt="Chat on WhatsApp" src="Images/WhatsAppButtonGreenLarge.png" />
+                        <a />
+                </div>
+            </div>
+        </section>
 
-  </div>
-  <!-----------------------------------/TriggerClass----------------------------------->
-
-  <!-----------------------------------Wrapper----------------------------------->
-  <div class="Wrapper Wrapper2">
-    <h1>SOON<span>.</span></h1>
-  </div>
-  <!-----------------------------------/Wrapper----------------------------------->
-
-  <!-- THREE.JS -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.139.0/build/three.min.js"></script>
-  <!-- OrbitControls.js -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.139.0/examples/js/controls/OrbitControls.js"></script>
-  <!-- GSAP.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <!-- ScrollTrigger.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-  <!-- App.js -->
-  <script src="JS/App.js"></script>
-</body>
-
-</html>
+        <footer class="footer">
+            <div class="container">
+                <h3>
+                    <img src="Images/logo-w.png" alt="Girl in a jacket" width="160" height="60">
+                </h3>
+                <p data-en="Digital marketing studio helping brands show up, grow fast, and stand out." data-ar="استوديو تسويق رقمي بيساعد البراندات تبان، تكبر، وتتميّز">Digital marketing studio helping brands show up, grow fast, and stand out.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/martx.agency"><img src="Images/facebook.png" alt="Facebook" style="width:42px;height:42px;"></a>
+                    <a href="https://www.instagram.com/martx.agency/"><img src="Images/instagram.png" alt="Instagram" style="width:42px;height:42px;"></a>
+                    <a href="https://www.tiktok.com/@martx.agency"><img src="Images/tiktok.png" alt="TikTok" style="width:42px;height:42px;"></a>
+                    <a href="https://wa.me/201020034584"><img src="Images/whatsapp.png" alt="Whatsapp" style="width:42px;height:42px;"></a>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <p data-en="© 2024 MartX. All rights reserved. " data-ar="© ٢٠٢٤ MartX. جميع الحقوق محفوظة.">© 2024 MartX. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="JS/main.js"></script>
+    </body>
+    </html>
