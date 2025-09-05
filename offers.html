@@ -2,114 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Offers</title>
+  <title>Offers (A4 Print)</title>
   <style>
-    :root { --maxw: 1000px; }
-    * { box-sizing: border-box; }
+    @page {
+      size: A4;
+      margin: 0;
+    }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #f7f7f8;
-      color: #111827;
-      display: grid;
-      min-height: 100svh;
-      place-items: start center;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
     }
-    .wrap {
-      width: min(100%, var(--maxw));
-      padding: 20px;
-    }
-
-    header {
+    .page {
+      width: 210mm;
+      height: 297mm;
+      margin: auto;
+      background: white;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 20px;
+      page-break-after: always;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
     }
-
+    .page img {
+      max-width: 95%;
+      max-height: 90%;
+      object-fit: contain;
+    }
     .home-btn {
-      appearance: none;
-      border: 0;
+      margin: 20px auto;
+      display: inline-block;
       background: #111827;
       color: #fff;
-      padding: 10px 16px;
-      border-radius: 14px;
-      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: bold;
       text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 6px 16px rgba(0,0,0,.12);
-      transition: transform .08s ease, box-shadow .2s ease, opacity .15s ease;
-      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    .home-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(0,0,0,.16); }
-    .home-btn:active { transform: translateY(0); opacity: .9; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-    @media (max-width: 720px) {
-      .grid { grid-template-columns: 1fr; }
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0,0,0,.08);
-      transition: transform .15s ease, box-shadow .2s ease;
-    }
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 16px 40px rgba(0,0,0,.12);
-    }
-    .card img {
-      display: block;
-      width: 100%;
-      height: 842px;        /* Adjust as you like */
-      object-fit: cover;    /* Keeps images nicely cropped */
-      background: #e5e7eb;  /* placeholder bg while loading */
-    }
-    .caption {
-      padding: 12px 14px 16px;
-      font-size: 14px;
-      color: #4b5563;
-    }
+    .home-btn:hover { background: #374151; }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <header>
-      <h1 style="margin:0;font-size:24px;">Today’s Offers</h1>
 
-      <!-- Change href to your real home page URL, e.g., "/" or "index.html" -->
-      <a class="home-btn" href="/">
-        <!-- simple home icon -->
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-10.5z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
-        </svg>
-        Home
-      </a>
-    </header>
+  <!-- First page with first offer -->
+  <div class="page">
+    <img src="s6.png" alt="Page 1" />
+  </div>
 
-    <section class="grid" aria-label="Offer images">
-      <!-- Offer 1 -->
-      <article class="card">
-        <!-- Replace src with your first image path -->
-        <img src="s6.png" alt="Page 1" />
-      </article>
+  <!-- Second page with second offer -->
+  <div class="page">
+    <img src="s7.png" alt="Page 2" />
+  </div>
 
-      <!-- Offer 2 -->
-      <article class="card">
-        <!-- Replace src with your second image path -->
-        <img src="s7.png" alt="Page 2" />
-      </article>
-    </section>
-  </main>
+  <!-- Home button (outside of print pages) -->
+  <div style="text-align:center; padding: 20px;">
+    <a class="home-btn" href="index.html">Home</a>
+  </div>
+
 </body>
 </html>
